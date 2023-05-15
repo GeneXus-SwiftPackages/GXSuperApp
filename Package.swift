@@ -16,13 +16,13 @@ let package = Package(
 		.target(name: "GXSuperAppWrapper",
 				dependencies: [
 					"GXSuperApp",
-					.product(name: "GXCoreBL", package: "GXCoreBL", condition: .when(platforms: [.tvOS, .iOS]))
+					.product(name: "GXCoreBL", package: "GXCoreBL", condition: .when(platforms: [.iOS, .tvOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXSuperApp",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXSuperApp-1.0.0-beta+20230515020747.xcframework.zip",
-			checksum: "bcb4ae34fe3c9243d7deaf4fa67617b576443b364755a575ac682f2ffeb7bcad"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXSuperApp-1.0.0-beta+20230515023341.xcframework.zip",
+			checksum: "0a25b8a97ec8a7d72fc2c47e9aa1b82f21d130aa9fdd2ea213afa9f7391e2f2d"
 		)
 	]
 )
