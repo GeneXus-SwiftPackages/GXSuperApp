@@ -10,19 +10,19 @@ let package = Package(
 			targets: ["GXSuperAppWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.2.0-rc.1")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.2.0-rc.15")
 	],
 	targets: [
 		.target(name: "GXSuperAppWrapper",
 				dependencies: [
 					"GXSuperApp",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.tvOS, .iOS]))
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .tvOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXSuperApp",
-			url: "https://pkgs.genexus.dev/iOS/preview/GXSuperApp-1.2.0-rc.1.xcframework.zip",
-			checksum: "ffd5e07594908258e9b595af6e48c223b92d60e8d15c84b0b23321317d99da3f"
+			url: "https://pkgs.genexus.dev/iOS/preview/GXSuperApp-1.2.0-rc.15.xcframework.zip",
+			checksum: "95fcbde8bd7283dba91655a3a3ed2cdce42bca83fac2921560ff879baa42bed8"
 		)
 	]
 )
