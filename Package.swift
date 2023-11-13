@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXSuperAppWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.3.0-rc.1")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.3.0-rc.7")
 	],
 	targets: [
 		.target(name: "GXSuperAppWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXSuperApp",
-			url: "https://pkgs.genexus.dev/iOS/preview/GXSuperApp-1.3.0-rc.1.xcframework.zip",
-			checksum: "e1cb9105ac2c48260db9878d28f270addee109fe2c20edc912f31a7d86160fc7"
+			url: "https://pkgs.genexus.dev/iOS/preview/GXSuperApp-1.3.0-rc.7.xcframework.zip",
+			checksum: "2d2ab8cc1ed407518f268427e45ad1e6841145e424f00311981d70b8fb5bc329"
 		)
 	]
 )
